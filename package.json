@@ -1,0 +1,25 @@
+{
+  "name": "7.8.CI_CD_Jenkins",
+  "version": "1.0.0",
+  "description": "HW",
+  "main": "index.js",
+  "scripts": {
+    "cy:dashboard": "npx cypress run --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:petshop": "cypress run --spec 'cypress/integration/petshop.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b", 
+    "cy:login": "cypress run --spec 'cypress/integration/login.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:hall": "cypress run --spec 'cypress/integration/hall.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:film": "cypress run --spec 'cypress/integration/film.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:booking": "cypress run --spec 'cypress/integration/booking.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:parallel": "npm run cy:petshop -- --browser chrome --group Spec1 --ci-build-id 4 & npm run cy:login -- --browser electron --group Spec2 --ci-build-id 4"     
+  },
+  "author": "SIV",
+  "license": "ISC",
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.1.0",
+    "chai": "^4.3.6",
+    "cypress": "^9.5.1",
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "^8.10.0",
+    "prettier": "^2.5.1"
+  }
+}

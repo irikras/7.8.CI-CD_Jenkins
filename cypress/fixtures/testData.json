@@ -1,0 +1,19 @@
+{
+    "hallName1":"TestHall1",
+    "rows1": "10",
+    "seats1": "15",
+    "hallName2":"TestHall2",
+    "rows2": "14",
+    "seats2": "20",
+    "priceRegular": "200",
+    "priceVIP": "500",
+    "movieTitle1": "Spider-Man",
+    "movieTime1": "180",
+    "movieDescription1": "Marvel Comics superhero created by Stan Lee and Steve Ditko",
+    "movieCountry1": "USA",
+    "movieTitle2": "Spider-Man: No Way Home",
+    "movieTime2": "148",
+    "movieDescription2": "The Matrix is an American media franchise created by writers-directors",
+    "movieCountry2": "USA",       
+    "salesHall": "Hercules"
+}
