@@ -2,7 +2,7 @@ import "cypress-file-upload";
 import "@4tw/cypress-drag-drop";
 
 const selectors = require("../fixtures/selectors.json");
-const filepath = "../../cypress/fixtures/poster.png";
+const filepath = "../../cypress/fixtures/images/poster.png";
 
 Cypress.Commands.add("login", (login, password) => {
   cy.get(selectors.loginMail).type(login);
