@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "HW",
   "main": "index.js",
-  "scripts": {
+  "scripts": {    
     "cy:dashboard": "npx cypress run --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
     "cy:petshop": "cypress run --spec 'cypress/integration/petshop.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b", 
     "cy:login": "cypress run --spec 'cypress/integration/login.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
     "cy:hall": "cypress run --spec 'cypress/integration/hall.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
     "cy:film": "cypress run --spec 'cypress/integration/film.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
     "cy:booking": "cypress run --spec 'cypress/integration/booking.spec.js' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
-    "cy:parallel": "npm run cy:petshop -- --browser chrome --group Spec1 --ci-build-id 4 & npm run cy:login -- --browser electron --group Spec2 --ci-build-id 4"     
+    "cy:parallelchrome": "npm run cy:petshop -- --browser chrome --group Spec1 --ci-build-id 12 & npm run cy:login -- --browser electron --group Spec2 --ci-build-id 12",
+    "cy:paralleledge": "npm run cy:petshop -- --browser edge --group Spec1 --ci-build-id 13 & npm run cy:login -- --browser chrome --group Spec2 --ci-build-id 13",
+    "cy:parallelelectron": "npm run cy:petshop -- --browser electron --group Spec1 --ci-build-id 14 & npm run cy:login -- --browser edge --group Spec2 --ci-build-id 14",
+    "cy:adminFolder": "cypress run --spec 'cypress/integration/admin/*' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b", 
+    "cy:userFolder": "cypress run --spec 'cypress/integration/user/*' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
+    "cy:parallelFolder": "npm run cy:adminFolder -- --browser chrome --group SpecFolder1 --ci-build-id 17 & npm run cy:userFolder -- --browser electron --group SpecFolder2 --ci-build-id 17"    
   },
   "author": "SIV",
   "license": "ISC",
@@ -21,5 +26,4 @@
     "cypress-file-upload": "^5.0.8",
     "eslint": "^8.10.0",
     "prettier": "^2.5.1"
-  }
-}
+  }}

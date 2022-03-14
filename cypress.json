@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://qamid.tmweb.ru/admin",
   "retries": 2,
+  "video":false,
   "projectId": "u7j285"
 }
