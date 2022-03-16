@@ -15,7 +15,7 @@
     "cy:parallelelectron": "npm run cy:petshop -- --browser electron --group Spec1 --ci-build-id 14 & npm run cy:login -- --browser edge --group Spec2 --ci-build-id 14",
     "cy:adminFolder": "cypress run --spec 'cypress/integration/admin/*' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
     "cy:userFolder": "cypress run --spec 'cypress/integration/user/*' --record --key 52874f15-5ee8-45c6-87bb-bde6b03e6f0b",
-    "cy:parallelFolder": "npm run cy:adminFolder -- --browser chrome --group SpecFolder1 --ci-build-id 23 & npm run cy:userFolder -- --browser electron --group SpecFolder2 --ci-build-id 23"
+    "cy:parallelFolder": "npm run cy:adminFolder -- --browser chrome --group SpecFolder1 --ci-build-id 24 & npm run cy:userFolder -- --browser electron --group SpecFolder2 --ci-build-id 24"
   },
   "author": "SIV",
   "license": "ISC",
