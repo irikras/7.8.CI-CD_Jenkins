@@ -3,7 +3,7 @@ const testData = require("../../fixtures/testData.json");
 beforeEach(() => {
   cy.visit("/");
   cy.login("qamid@qamid.ru", "qamid");
-  cy.contains("Идёмвкино");
+  cy.contains("Управление залами");
 });
 
 describe("Hall creating", () => {
